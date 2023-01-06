@@ -79,10 +79,10 @@ export default function UserForm({ initialV, onSubmit, heading, code, buttonText
                   { buttonText }
                 </Button>
                 {(code === "signup") &&  <>
-                <Text textAlign={"center"} fontSize='xs'>Already Have an Account? <Link href="/signin" color='blue'>Login</Link></Text> 
+                <Text textAlign={"center"} fontSize='xs'>Already Have an Account? <Link onClick={() => navigate('/signin')} color='blue'>Login</Link></Text> 
                 </>}
                 {(code === "login") &&  <>
-                <Text textAlign={"center"} fontSize='xs'>Don't have an account? <Link href="/signup" color='blue'>Signup</Link></Text> 
+                <Text textAlign={"center"} fontSize='xs'>Don't have an account? <Link onClick={() => navigate('/signup')} color='blue'>Signup</Link></Text> 
                 </>}
                 
 
