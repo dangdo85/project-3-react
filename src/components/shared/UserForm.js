@@ -11,9 +11,12 @@ import {
   Text,
   Link
 } from "@chakra-ui/react"
+import { useNavigate } from "react-router-dom"
+
 
 export default function UserForm({ initialV, onSubmit, heading, code, buttonText }) {
-
+  const navigate = useNavigate()
+  
   return (
     <>
       

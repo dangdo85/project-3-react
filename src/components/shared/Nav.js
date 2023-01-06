@@ -15,12 +15,13 @@ import { FaAlignJustify } from 'react-icons/fa'
 import { Icon } from '@chakra-ui/react'
 import { useNavigate } from 'react-router-dom'
 
+
 const Nav = ({ onOpen, user, clearUser }) => {
   const [scroll, setScroll] = useState(false)
   const { colorMode, toggleColorMode } = useColorMode()
   const navBg = useColorModeValue('white', 'blackAlpha.200')
   const [isLargerThanMD] = useMediaQuery('(min-width: 48em)')
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
   
   const changeScroll = () =>
     document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
